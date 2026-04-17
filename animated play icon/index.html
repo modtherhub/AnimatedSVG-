@@ -80,6 +80,23 @@
         </g>
       </g>
   </svg>
+
+  <script>
+
+    const svg = document.getElementById('triangles');
+
+    svg.addEventListener('click', rando);
+
+    function rando() {
+      const colors = ['red', 'green', 'blue', 'pink', 'purple', 'orange', 'cyan', 'magenta', 'yellow'];
+      const randomeColor = () => colors[Math.floor(Math.random() * colors.length)]
+      document.documentElement.style.cssText = `
+        --dark-color: ${randomeColor()};
+        --light-color: ${randomeColor()};
+      `
+    }
+
+  </script>
 </body>
 
 </html>
