@@ -25,7 +25,7 @@ body {
   overflow: hidden;
   white-space: nowrap;
   border-right: 1px solid;
-  animation: typing 3s steps(22) infinite, 
+  animation: typing 3s steps(22) infinite/*  forwards */, 
   blink 1s 3s step-end infinite;
 }
 
